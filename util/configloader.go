@@ -20,7 +20,7 @@ var Cfg *Config
 var Fullurl string
 
 func LoadConfig()*Config{
-	raw, err := ioutil.ReadFile("config/config.json")
+	raw, err := ioutil.ReadFile("/go/src/vwa/config/config.json")
 	if err != nil{
 		fmt.Println(err.Error())
 	}

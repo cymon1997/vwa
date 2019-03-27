@@ -30,7 +30,7 @@ services:
     image: golang:1.8
     container_name: golang_main
     build: .
-    command: ["go", "run", "app.go"]
+    command: ["go", "run", "/go/src/vwa/app.go"]
     volumes:
       - .:/go/src/vwa
     ports:
